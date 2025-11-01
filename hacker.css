@@ -1,0 +1,80 @@
+/* Estilo básico para o corpo */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo do contêiner principal */
+.container {
+    text-align: center;
+}
+
+/* Cabeçalho estilo hacker */
+header {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
+    color: #00ff00;
+}
+
+#subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Estilo do botão hacker */
+button {
+    background-color: #00ff00;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cc00;
+    box-shadow: 0 0 20px #00cc00;
+}
+
+/* Efeito de glitch no texto */
+.glitch {
+    font-size: 30px;
+    position: relative;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff; }
+    25% { text-shadow: -2px 2px #ff00ff, 2px -2px #00ffff; }
+    50% { text-shadow: 2px -2px #ff00ff, -2px 2px #00ffff; }
+    75% { text-shadow: -2px -2px #ff00ff, 2px 2px #00ffff; }
+    100% { text-shadow: 0px 0px #ff00ff, 0px 0px #00ffff; }
+}
+
+/* Estilo do rodapé */
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #00ff00;
+}
